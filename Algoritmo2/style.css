@@ -1,0 +1,25 @@
+.navbar{
+    background-color: black;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+.navbar a{
+    color: white;
+}
+
+.header{
+    background-color: blue;
+    height: 500px;
+    padding: 10px;
+    background-image: url();
+}
+
+.footer{
+    background-color: red;
+    height: 100px;
+    padding: 10px;
+}
