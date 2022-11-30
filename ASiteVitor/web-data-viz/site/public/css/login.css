@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+body *{
+    box-sizing: border-box;
+}
+
+/* Codigo para o contexto do site */
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1D428A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.L{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.L h1{
+    color: #FFC72C;
+    font-size: 3vw;
+    padding: 30px;
+}
+
+.R{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #1D428A;
+    border-radius: 20px;
+    border: 2px solid #FFC72C;
+    box-shadow: 0px 10px 40px #FFC72C;
+}
+
+.card  .C{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFC72C;
+}
+
+.card .C:hover{
+    transition: 0.3s;
+    color: red;
+}
+
+.card h1{
+    color: #FFC72C;
+    margin: 0;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.text input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #FFC72C;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text label{
+    color: #FFC72C;
+    margin-bottom: 10px;
+}
+
+.text input::placeholder{
+    color: #FFC72C;
+}
+
+.bnt{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    background: #FFC72C;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.curry-img{
+    width: 60%;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 950px){
+    .card{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .main{
+        flex-direction: column;
+    }
+    .L h1{
+        display: none;
+    }
+    .L{
+        width: 100%;
+        height: auto;
+    }
+    .R{
+        width: 100%;
+        height: auto;
+    }
+    .L .curry-img{
+        width: 50vw;
+    }
+    .card{
+        width: 90%;
+    }
+}
+
+

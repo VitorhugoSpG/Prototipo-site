@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #1D428A;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+
+.box{
+    display: flex;
+    width: 930px;
+}
+
+.img-box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 50px #FFC72C;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.form-box{
+    background-color: #ffc72c;
+    padding: 30px 40px;
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+    border: 3px solid black;
+}
+
+.form-box h2{
+    font-size: 30px;
+}
+
+.form-box p{
+    font-weight: bold;
+    color: black
+}
+
+.form-box p a{
+    color: #1D428A;
+    text-decoration: none;
+    font-size: large;
+}
+
+.form-box p a:hover{
+    transition: 0.3s;
+    color: red;
+}
+
+.form-box form{
+    margin: 20px 0;
+}
+
+form .input-group{
+    margin-bottom: 15px;
+}
+
+form .input-group label{
+    color: #1D428A;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: #514869;
+    border-radius: 20px;
+    outline: none;
+    border: 3px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+form .input-group input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+form .input-group input:focus{
+    border-color: #1D428A;
+}
+
+form .input-group button{
+    width: 100%;
+    height: 47px;
+    background-color: #1D428A;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: #FFC72C;
+    cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: medium;
+}
+/* Responsividade */
+@media (max-width:950px){
+    .img-box{
+        display: none;
+    }
+    .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:500px){
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+}
